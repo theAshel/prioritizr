@@ -1,0 +1,101 @@
+#profile-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F3F4FF;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    box-sizing: border-box;
+    border: none;
+    padding: 30px;
+}
+
+.profile-dialog-content {
+    text-align: center;
+}
+
+.profile-dialog-content p {
+    margin-bottom: 10px;
+}
+
+.profile-dialog-content p:first-child {
+    margin-top: 0;
+}
+
+.profile-dialog-content p:last-child {
+    margin-bottom: 0;
+}
+
+.profile-dialog-content a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.profile-dialog-content a:hover {
+    text-decoration: none;
+}
+
+.profile-dialog-content .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+button#save-button {
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    color: #FAF6F6;
+    background: linear-gradient(120.74deg, #3D69A6 31.35%, #50A7DF 150.73%);
+    cursor: pointer;
+}
+
+button#save-button:hover {
+    background: linear-gradient(120.74deg, #7991CE 31.35%, #C5D8E3 150.73%);
+}
+
+button#close-button {
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    margin-top: 50px;
+    color: #FAF6F6;
+    background: linear-gradient(120.74deg, #565d68 31.35%, #e1e2e2 150.73%);
+    cursor: pointer;
+}
+
+button#close-button:hover {
+    background: linear-gradient(120.74deg, #7991CE 31.35%, #C5D8E3 150.73%);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+.form-group input {
+    font-size: 18px;
+    text-decoration: none;
+    color: #4B4A69;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #AAA6A6;
+}

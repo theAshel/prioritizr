@@ -1,0 +1,10 @@
+h3, h5, h6, label, input, p, button, ul, ol, li{
+    color: #4B4A69;
+    font-family: "Lexend-Regular", sans-serif;
+}
+
+.container {
+    display: flex;
+    margin-top: 87px;
+    /* height: calc(100% - 87px); */
+  }

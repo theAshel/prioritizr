@@ -1,0 +1,151 @@
+#edit-project-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F3F4FF;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    box-sizing: border-box;
+    border: none;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+p.invalid-input{
+    color: red;
+    font-size: 12px;
+    font-family: "Lexend-Light", sans-serif;
+    text-align: justify;
+}
+
+/* ------ Header section ------ */
+
+.edit-project-dialog-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-project-dialog-header h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.edit-project-dialog-header div {
+    margin-left: auto;
+}
+
+.fa-xmark {
+    font-size: 20px;
+    color: #4B4A69;
+    transition: 0.2s;
+}
+
+.fa-xmark:hover {
+    color: #057ec9;
+}
+/* ------ End header section ------ */
+
+.edit-name-and-status-container {
+    display: flex;
+    gap: 7%;
+    margin-top: 40px;
+}
+
+
+/* ------ Name input section ------ */
+
+.edit-project-dialog-input {
+    border-bottom: 1px solid #AAA6A6;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.edit-project-dialog-input label {
+    font-size: 20px;
+}
+
+.edit-project-dialog-input input {
+    font-size: 18px;
+    color: #4B4A69;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* ------ End title input section ------ */
+
+
+/* ------ Status section ------ */
+
+select {
+    margin-top: 20px;
+    width: 100%;
+    background: none;
+    border: none;
+    height: 33px;
+    font-size: 18px;
+}
+
+select:focus {
+    outline: none;
+}
+/* ------ End status section ------ */
+
+
+
+/* ------- Description section ------ */
+
+#edit-project-description {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#edit-project-description label {
+    font-size: 20px;
+}
+
+textarea#edit-project-description-input {
+    font-size: 14px;
+    border: 1px solid #AAA6A6;
+    height: 150px;
+    margin-top: 20px;
+    background: #f9faff;
+    padding: 10px;
+    resize: none;
+    width: 97%;
+}
+
+#edit-project-description textarea:focus {
+    outline: none;
+}
+
+/* ------- Description section ------ */
+
+
+/* ------ Button ------ */
+
+.edit-project-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button#valid-project-edit {
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    color: #FAF6F6;
+    background: linear-gradient(120.74deg, #3D69A6 31.35%, #50A7DF 150.73%);
+}
+
+button#valid-project-edit:hover {
+    background: linear-gradient(120.74deg, #7991CE 31.35%, #C5D8E3 150.73%);
+}
+
+/* ------ End Button ------ */

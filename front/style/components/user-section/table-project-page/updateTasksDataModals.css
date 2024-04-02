@@ -1,0 +1,324 @@
+.update-task-data-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F3F4FF;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    box-sizing: border-box;
+    border: none;
+    padding: 50px;
+    padding-right: 70px;
+    padding-top: 20px;
+    min-width: 40%;
+}
+
+p.invalid-input{
+    color: red;
+    font-size: 12px;
+    font-family: "Lexend-Light", sans-serif;
+    text-align: justify;
+}
+
+.readonly-info {
+    font-size: 18px;
+    color: #4B4A69;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* ------ Header section ------ */
+
+.update-task-dialog-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-task-dialog-header h3 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.update-task-dialog-header div {
+    margin-left: auto;
+}
+
+.fa-xmark {
+    font-size: 20px;
+    color: #4B4A69;
+    transition: 0.2s;
+}
+
+.fa-xmark:hover {
+    color: #057ec9;
+}
+/* ------ End header section ------ */
+
+.task-creator-username {
+    font-size: 20px;
+    color: grey;
+    margin-top: 10px;
+}
+
+
+/* ------ Name input section ------ */
+
+.dialog-input {
+    border-bottom: 1px solid #AAA6A6;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.dialog-input label {
+    font-size: 20px;
+}
+
+.dialog-input input {
+    font-size: 18px;
+    color: #4B4A69;
+    margin-top: 20px;
+}
+
+/* ------ End title input section ------ */
+
+
+
+/* ------ Difficulty and priority section ------ */
+
+.second-input-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-input-field .dialog-input {
+    width: 250px;
+}
+
+.second-input-field > div {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+select {
+    margin-top: 20px;
+    width: 100%;
+    background: none;
+    border: none;
+    height: 33px;
+    font-size: 18px;
+}
+
+select:focus {
+    outline: none;
+}
+/* ------ End difficulty and priority section ------ */
+
+
+/* ------ Show subtasks section ------ */
+
+
+.show-subtasks-section {
+    margin-top: 30px;
+}
+
+.show-subtasks-section > h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.show-subtasks-section > p {
+    font-size: 18px;
+    font-family: "Lexend-Light", sans-serif;
+}
+
+.subtask-to-delete-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.subtask-to-delete-container > label {
+    font-size: 17px;
+    color: #585454;
+}
+
+.subtask-to-delete-container > input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* ------ End show subtasks section ------ */
+
+
+
+/* ------ Add subtasks section ------ */
+
+.add-subtask-section {
+    margin-top: 30px;
+}
+
+.add-subtask-section > h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.add-subtask-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-bottom: 1px solid #AAA6A6;
+}
+
+.add-subtask-input-container > input {
+    font-size: 18px;
+    width: 80%;
+}
+
+.add-subtask-input-container > p {
+    font-size: 18px;
+    color: #585454;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.add-subtask-input-container > p:hover {
+    color: #999595;
+}
+
+.subtask-to-add {
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.subtask-to-add > p {
+    margin-right: 30px;
+}
+
+/* ------ End add subtasks section ------ */
+
+
+
+/* ------ Search user section ------ */
+
+.dialog-search-bar-input {
+    margin-top: 40px;
+    position: relative;
+}
+
+.dialog-search-bar-input label {
+    font-size: 20px;
+}
+
+.dialog-search-bar-input input {
+    margin-top: 0;
+    font-size: 18px;
+    color: #4B4A69;
+}
+.dialog-search-bar-input i {
+    font-size: 20px;
+}
+
+.search-update-attribute-task-user-results-container {
+    background-color: #FAF6F6;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: fit-content;
+    max-height: 200px;
+    overflow: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+}
+
+.attribute-task-user-search-result {
+    margin-top: 7px;
+}
+
+.attribute-task-user-search-result:hover {
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+
+.update-task-user-to-attribute-container {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.update-task-user-to-attribute-container > p {
+    color: #2541bd;
+    font-size: 19px;
+    margin-right: 20px;
+}
+
+/* ------ End search user section ------ */
+
+
+/* ------- Description section ------ */
+
+.update-task-description {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.update-task-description label {
+    font-size: 20px;
+}
+
+.update-task-description textarea {
+    font-size: 18px;
+    border: 1px solid #AAA6A6;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    background: #f9faff;
+    padding: 10px;
+    resize: none;
+}
+
+.update-task-description textarea:focus {
+    outline: none;
+}
+
+/* ------- Description section ------ */
+
+
+/* ------ Button ------ */
+
+.valid-task-update-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button.valid-task-update {
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    color: #FAF6F6;
+    background: linear-gradient(120.74deg, #3D69A6 31.35%, #50A7DF 150.73%);
+}
+
+button.valid-task-update:hover {
+    background: linear-gradient(120.74deg, #7991CE 31.35%, #C5D8E3 150.73%);
+}
+
+/* ------ End Button ------ */

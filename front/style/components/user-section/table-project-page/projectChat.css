@@ -1,0 +1,103 @@
+.chat-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #edefff;
+    width: 30%;
+    height: 70px; /* Hauteur du header */
+    transition: height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px 0px 0px 0px;
+    box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+.chat-container.open {
+    height: 90vh; /* Hauteur de l'onglet lorsqu'il est ouvert */
+}
+
+.chat-header {
+    background-color: #ACABD0;
+    padding: 10px 100px;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    border-radius: 13px 0px 0px 0px;
+    z-index: 2;
+    border-bottom: 1px solid #adadad;
+    color: #022133;
+    font-size: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+.chat-header:hover {
+    background-color: #cecdeb;
+}
+
+.chat-content {
+    flex: 1;
+    overflow-y: auto;
+    position: relative;
+    z-index: 1; /* Assure que le contenu est en dessous du header */
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-input-container {
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.chat-input-container > input {
+    font-size: 20px;
+}
+
+.chat-container.open .chat-input-container {
+    display: block; /* Affiche l'input lorsque l'onglet est ouvert */
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.message-container {
+    z-index: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    width: fit-content;
+    max-width: 75%;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.message-info {
+    font-size: 14px;
+    font-family: "Lexend-Light", sans-serif;
+    margin-bottom: 3px;
+}
+
+.message-sender {
+    color: #615DD6;
+    font-family: "Lexend-Medium", sans-serif
+}
+
+.message-container.sender {
+    background-color: #d0d5f5;
+}
+
+.message-container.receiver {
+    background-color: #e8e9ec;
+    margin-left: auto;
+}

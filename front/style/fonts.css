@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Lexend-Light";
+    src: url("../fonts/Lexend/Lexend-Light.ttf") format("truetype");
+    /* src:url("../fonts/Lexend/Lexend-Black.ttf") format("truetype")
+        url("../fonts/Lexend/Lexend-ExtraBold.ttf") format("truetype")
+        url("../fonts/Lexend/Lexend-ExtraLight.ttf") format("truetype")
+        url("../fonts/Lexend/Lexend-VariableFont_wght.ttf") format("truetype"); */
+}
+
+@font-face {
+    font-family: "Lexend-Thin";
+    src: url("../fonts/Lexend/Lexend-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lexend-Regular";
+    src: url("../fonts/Lexend/Lexend-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lexend-Bold";
+    src: url("../fonts/Lexend/Lexend-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lexend-SemiBold";
+    src: url("../fonts/Lexend/Lexend-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lexend-Medium";
+    src: url("../fonts/Lexend/Lexend-Medium.ttf") format("truetype");
+}

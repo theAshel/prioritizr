@@ -1,0 +1,237 @@
+#project-users-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F3F4FF;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    box-sizing: border-box;
+    border: none;
+    padding: 50px;
+    padding-top: 20px;
+    height: fit-content;
+    overflow: auto;
+    min-width: 40%;
+}
+
+p.invalid-input{
+    color: red;
+    font-size: 12px;
+    font-family: "Lexend-Light", sans-serif;
+    text-align: justify;
+}
+
+/* ------ Header section ------ */
+
+.project-users-dialog-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-users-dialog-header h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.project-users-dialog-header div {
+    margin-left: auto;
+}
+
+.fa-xmark {
+    font-size: 20px;
+    color: #4B4A69;
+    transition: 0.2s;
+}
+
+.fa-xmark:hover {
+    color: #057ec9;
+}
+/* ------ End header section ------ */
+
+
+
+/* ------ Show users section ------ */
+
+
+.show-users-section {
+    margin-top: 30px;
+}
+
+.show-users-section > h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.users-to-delete-container {
+    border: 1px solid #c4c4c4;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f9faff;
+    height: 250px;
+    max-height: 250px;
+    overflow-y: auto;
+    width: 80%;
+}
+
+.users-to-delete-container > p {
+    font-size: 17px;
+}
+
+.user-role {
+    font-size: 18px;
+}
+
+.not-owner {
+    margin-top: 15px;
+}
+
+.project-user {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.project-user:hover {
+    color: #93a2f7;
+}
+
+.other-users-to-delete-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.other-users-to-delete-container > label {
+    font-size: 17px;
+}
+
+.other-users-to-delete-container > input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+    /* ====== Edit user role section ====== */
+
+    .edit-role-section {
+        display: none;
+        justify-content: baseline;
+        align-items: center;
+    }
+
+    .edit-role-section > p {
+        color: #666666;
+        margin-left: 20px;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .edit-role-section > p:hover {
+        color: #b8b8b8;
+    }
+
+    select[name="edit-user-role"] {
+        width: fit-content;
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+
+    /* ====== end Edit user role  section ====== */
+
+/* ------ End show users section ------ */
+
+
+
+/* ------ Add users section ------ */
+
+.add-users-section {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.add-users-section > h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+#user-search-bar-results-container {
+    border: 1px solid #c4c4c4;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f9faff;
+    margin-top: 5px;
+    height: 200px;
+}
+
+#user-search-bar {
+    font-size: 18px;
+}
+
+.user-search-bar-result {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.user-search-bar-result:hover {
+    background-color: #d7d6f7;
+}
+
+#users-to-add-container {
+    margin-top: 15px;
+}
+
+.user-to-add {
+    font-size: 20px;
+    margin-top: 15px;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    justify-content: baseline;
+}
+
+.user-to-add > p {
+    height: fit-content;
+    margin: 0;
+    width: 20%;
+}
+
+select[name="user-role"] {
+    width: fit-content;
+    margin: 0;
+}
+
+/* ------ End add users section ------ */
+
+
+/* ------ Button ------ */
+
+.manage-users-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button#valid-manage-users {
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    color: #FAF6F6;
+    background: linear-gradient(120.74deg, #3D69A6 31.35%, #50A7DF 150.73%);
+}
+
+button#valid-manage-users:hover {
+    background: linear-gradient(120.74deg, #7991CE 31.35%, #C5D8E3 150.73%);
+}
+
+/* ------ End Button ------ */

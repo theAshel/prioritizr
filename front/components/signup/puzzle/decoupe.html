@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Générateur d'images découpées</title>
+    <script>
+        function genererImagesDecoupees() {
+            // Exécuter une requête AJAX pour appeler le fichier PHP qui exécute le script Python
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "decoupe.php", true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    alert("Images découpées générées avec succès !");
+                } else {
+                    alert("Erreur lors de la génération des images découpées.");
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <h1>Générateur d'images découpées</h1>
+    <button onclick="genererImagesDecoupees()">Générer les images découpées</button>
+</body>
+</html>

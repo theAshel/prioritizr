@@ -1,0 +1,191 @@
+body {
+    background-color: white;
+}
+
+p, button {
+    color: #4B4A69;
+    font-family: "Lexend-Regular", sans-serif;
+}
+
+/* ------ Header section ------ */
+
+#index-header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+    background: #ECEDFD;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: 100%;
+}
+
+img.prioritizr-logo {
+    width: 360px;
+    height: 70px;
+}
+
+#inside-header-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+    /* ------ Toggle button ------ */
+    .toggle-button-container {
+        display: flex;
+        align-items: center;
+    }
+    .fa-sun, .fa-moon {
+        color: #2F2E53;
+        font-size: 26px;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .label-toggle-button {
+        display: inline-block;
+        height: 33px;
+        width: 100px;
+        background: #D8DBF6;
+        position: relative;
+        transition: all .3s;
+        border-radius: 19px;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+        margin: 0 10px;
+    }
+
+    .label-toggle-button:after {
+        content: "";
+        height: 24px;
+        width: 24px;
+        background: #2F2E53;
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        transition: all .3s;
+        border-radius: 50%;
+    }
+
+    .toggle-button:checked + .label-toggle-button:after {
+        transform: translateX(67px);
+        background: #D8DBF6;
+    }
+
+    .toggle-button:checked + .label-toggle-button {
+        background: #2F2E53;
+    }
+
+    /* ------ End toggle button ------ */
+
+#connection-button {
+    font-size: 22px;
+    margin-right: 40px;
+    margin-left: 40px;
+    transition: 0.2s;
+}
+
+#connection-button:hover {
+    color: #86859e;
+}
+
+a {
+    text-decoration: none;
+}
+
+.register-button {
+    border-radius: 15px;
+    background: linear-gradient(171deg, #3D69A6 0%, #3D69A6 0.01%, #50A7DF 100%);
+    border: none;
+    font-size: 22px;
+    color: white;
+    box-sizing: border-box;
+    padding: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background: linear-gradient(171deg, #3D69A6 0%, #89a3c7 0.01%, #9bc6e0 100%);
+}
+
+/* ------ Header section ------ */
+
+main {
+    padding-top: 100px;
+}
+
+/* ------ Main section ------ */
+
+.main-paragraph {
+    font-size: 30px;
+}
+
+.bold-text {
+    font-family: "Lexend-Medium", sans-serif;
+    font-size: 33px;
+}
+
+#first-paragraph {
+    width: 45%;
+}
+.main-image {
+    border-radius: 19px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+section {
+    padding: 60px 350px;
+    box-sizing: border-box;
+}
+
+#first-image-container {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#first-image {
+    margin-right: 50px;
+}
+
+#index-section-2 {
+    padding: 60px 30%;
+    background: #ECEDFD;
+    text-align: center;
+}
+
+#second-image {
+    margin-bottom: 40px;
+}
+
+#last-button-container {
+    text-align: center;
+}
+
+#last-button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    font-size: 35px;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: 0.2s;
+}
+/* ------ End main section ------ */
+
+/* ------ footer section ------ */
+
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+/* ------ End footer section ------ */

@@ -1,0 +1,1 @@
+Gender: man, Hair: brown, Eyes: eyes, Mouth: mouth1, Skin: nocolor

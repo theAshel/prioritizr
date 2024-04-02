@@ -1,0 +1,157 @@
+#create-project-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F3F4FF;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    box-sizing: border-box;
+    border: none;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+/* .dark-mode #create-project-dialog {
+    background: #222222; /* Background color in dark mode */
+
+
+p.invalid-input {
+    color: red;
+    font-size: 12px;
+    font-family: "Lexend-Light", sans-serif;
+    text-align: justify;
+}
+
+/* Header section */
+
+.create-project-dialog-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-project-dialog-header h3 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.create-project-dialog-header div {
+    margin-left: auto;
+}
+
+.fa-xmark {
+    font-size: 20px;
+    color: #4B4A69;
+    transition: 0.2s;
+}
+
+.fa-xmark:hover {
+    color: #057ec9;
+    font-size: 22px;
+}
+
+/* Title input section */
+
+.dialog-input {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.dialog-input label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dialog-input input {
+    font-size: 18px;
+    color: #4B4A69;
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #AAA6A6;
+}
+
+/* Model section */
+
+.choose-model {
+    margin-top: 40px;
+}
+
+.choose-model h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.choose-model .model-button {
+    display: grid;
+    grid-template-rows: 70px 35px;
+    width: 166px;
+    text-align: center;
+}
+
+.choose-model .model-name {
+    font-size: 14px;
+}
+
+.buttons-container input[type="radio"] {
+    display: none;
+}
+
+.buttons-container label:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Search user section */
+
+.dialog-search-bar-input {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.dialog-search-bar-input label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dialog-search-bar-input input {
+    font-size: 18px;
+    color: #4B4A69;
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #AAA6A6;
+}
+
+.dialog-search-bar-input i {
+    font-size: 20px;
+    color: #4B4A69;
+    cursor: pointer;
+}
+
+/* Button */
+
+#valid-project-creation-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button#valid-project-creation {
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    color: #FAF6F6;
+    background: linear-gradient(120.74deg, #3D69A6 31.35%, #50A7DF 150.73%);
+    cursor: pointer;
+}
+
+button#valid-project-creation:hover {
+    background: linear-gradient(120.74deg, #7991CE 31.35%, #C5D8E3 150.73%);
+}

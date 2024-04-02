@@ -1,0 +1,94 @@
+#avatar-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F3F4FF;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    box-sizing: border-box;
+    border: none;
+    padding: 30px;
+    width: 800px; /* Augmenter la largeur */
+    height: 800px; /* Augmenter la hauteur */
+}
+
+#avatarimage {
+    width: 128px;
+    height: 128px;
+    margin-left: 300px;
+
+     /* Remplacez la valeur par celle souhaitée */
+}
+
+.select-container {
+    margin-bottom: 20px;
+}
+
+.select-container select {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background: #3F51B5;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.buttons-container button:hover {
+    background: #1E40AF;
+}
+
+.avatar-select {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+    appearance: none;
+    background-color: #fff;
+    background-image: linear-gradient(45deg, transparent 50%, #3F51B5 50%), linear-gradient(135deg, #3F51B5 50%, transparent 50%);
+    background-position: calc(100% - 20px) center, calc(100% - 15px) center;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.avatar-select option {
+    background-color: #fff;
+    color: #333;
+}
+
+.avatar-select:hover {
+    border-color: #3F51B5;
+}
+
+.avatar-select:focus {
+    outline: none;
+    border-color: #3F51B5;
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+
+.avatar-title {
+    margin-left: 315px;
+    font-family: "Lexend-Regular", sans-serif;
+    color: #4B4A69;
+}

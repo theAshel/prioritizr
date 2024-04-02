@@ -1,0 +1,147 @@
+.fieldset {
+    background-color: #F3F4FF;
+    box-sizing: border-box;
+    border-radius: 18px;
+    width: 380px;
+    padding: 30px;
+    box-shadow: 0px 0px 53px -4px rgba(0, 0, 0, 0.25);
+}
+
+h3, label, input, h5, p, button{
+    color: #4B4A69;
+    font-family: "Lexend-Regular", sans-serif;
+}
+
+h3 {
+    font-family: "Lexend-Medium", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+label {
+    font-size: 14px;
+}
+
+div.eye-icon {
+    display: flex;
+    align-items: center;
+}
+
+.fa-eye {
+    color: #bfbfbf;
+    font-size: 15px;
+}
+
+div.container-password {
+    display: flex;
+}
+
+div.input > div {
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+p {
+    font-size: 13px;
+    text-align: center;
+}
+
+span.hyperlink-text > a{
+    font-family: "Lexend-SemiBold", sans-serif;
+    color: #3E6AA7;
+    font-weight: 300;
+}
+
+span.hyperlink-text > a:hover{
+    color: #0C3062;
+}
+
+div.input {
+    border-bottom: 1px solid #AAA6A6;
+}
+
+div#password-input {
+    margin-top: 20px;
+}
+
+input {
+    border: none;
+    background: none;
+    height: 33px;
+    font-size: 14px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="password"] {
+    font-size: 20px;
+}
+
+p.invalid-input{
+    color: red;
+    font-size: 12px;
+    font-family: "Lexend-Light", sans-serif;
+    text-align: justify;
+}
+
+div.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 56px;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+}
+
+button.connection {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 188px;
+    color: #FAF6F6;
+    background: linear-gradient(120.74deg, #3D69A6 31.35%, #50A7DF 150.73%);
+}
+
+button.connection:hover {
+    background: linear-gradient(120.74deg, #7991CE 31.35%, #C5D8E3 150.73%);
+}
+
+button.connection-with-google {
+    font-family: "Lexend-Medium", sans-serif;
+    font-size: 18px;
+    width: 282px;
+    background-color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+button.connection-with-google:hover {
+    background: #F4F4F4;
+}
+
+span.google-btn {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+img#google-icon {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+}

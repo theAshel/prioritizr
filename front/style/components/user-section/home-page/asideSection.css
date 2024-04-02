@@ -1,0 +1,148 @@
+aside {
+    position: relative;
+    z-index: 1;
+    width: 25%;
+    min-height: calc(100vh - 87px);
+    background: #E0E1F4;
+    border-right: 1px solid #ACABD0;
+    float: left;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* ------ Stats section ------ */
+
+.stats-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    border-bottom: 2px solid #C9C9DE;
+}
+
+.stat {
+    width: max-content;
+    margin-bottom: 30px;
+}
+
+.stat > h5 {
+    font-family: "Lexend-Light", sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.stat > p {
+    font-size: 30px;
+}
+
+.stat > p::before {
+    content: "";
+    margin-right: 12px;
+}
+
+.number-of-projects > p::before {
+    border: 2px solid #4B4A69;
+}
+.completed > p::before {
+    border: 2px solid #41E508;
+}
+.in-progress > p::before {
+    border: 2px solid #3d6bce;
+}
+.canceled > p::before {
+    border: 2px solid #DB0000;
+}
+
+/* ------ End stats section ------ */
+
+/* ----------------------------------------------------------------------- */
+
+/* ------ Infos section ------ */
+
+.info {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.info > h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #4B4A69;
+}
+
+.list > p.empty {
+    color: #696B6F
+}
+
+.list p.line-project-list {
+    font-size: 19px;
+    color: #4B4A69;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.list p.line-project-list:hover {
+    color: #9d9cbe;
+}
+
+.list div.line-container {
+    display: flex;
+    align-items: center;
+}
+
+.list div.line-container:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.dot {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.red.dot {
+    background-color: #DB0000;
+}
+
+.blue.dot {
+    background-color: #3d6bce;
+}
+
+.green.dot {
+    background-color: #41E508;
+}
+
+.show-more, .show-less {
+    margin-top: 15px;
+    color: #696B6F;
+    transition: 0.2s;
+    display: none;
+}
+
+.show-more:hover, .show-less:hover {
+    color: #9fa0a3;
+    cursor: pointer;
+}
+
+.info > p.create-button {
+    color: #3B7BDA;
+    font-size: 17px;
+    margin-left: 5px;
+    margin-top: 10px;
+    transition: 0.2s;
+    width: fit-content;
+}
+
+.info > p.create-button:hover {
+    color: #164a99;
+    cursor: pointer;
+}
+
+/* ------ End infos section ------ */

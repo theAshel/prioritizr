@@ -1,0 +1,55 @@
+.delete-task-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F3F4FF;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    box-sizing: border-box;
+    border: none;
+    padding: 30px 50px;
+}
+
+.delete-task-dialog h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.delete-task-dialog div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.delete-task-dialog button {
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+    font-size: 18px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    color: #FAF6F6;
+    background: linear-gradient(177.65deg, #FD0000 1.97%, rgba(253, 0, 0, 0) 182.42%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.delete-task-dialog button:hover {
+    background: linear-gradient(177.65deg, #e47e7e 1.97%, rgba(253, 0, 0, 0) 182.42%);
+}
+
+.close-delete-task-dialog-button {
+    font-size: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.close-delete-task-dialog-button:hover {
+    transform: translateY(-1px);
+    color: #8e8bd6;
+}

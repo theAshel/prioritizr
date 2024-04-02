@@ -1,0 +1,60 @@
+p.cadre {
+    font-size: 14px;
+    text-align: left;
+}
+
+div.choice {
+    border: none;
+}
+
+div.choice p {
+    margin-bottom: 18px;
+}
+
+select {
+    width: 100%;
+    background: none;
+    border: none;
+    height: 33px;
+    font-size: 14px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.radio-container2, .radio-container3 {
+    margin-top: 14px;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: fit-content;
+}
+
+input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"]:hover + label:before {
+    background-color: #AAA6A6;
+    transition: 0.3s;
+}
+
+input[type="radio"]:checked + label:before {
+    background-color: #3E6AA7;
+    border: 1px solid #4B4A69;
+    transition: 0.3s;
+}
+
+label.type-of-use {
+    font-size: 13px;
+}

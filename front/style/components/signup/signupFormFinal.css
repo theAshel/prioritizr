@@ -1,0 +1,100 @@
+.fieldset-final {
+    background-color: #F3F4FF;
+    box-sizing: border-box;
+    border-radius: 18px;
+    width: 500px;
+    padding: 30px;
+    box-shadow: 0px 0px 53px -4px rgba(0, 0, 0, 0.25);
+}
+
+div.edit-info {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+
+.fa-pen-to-square {
+    color:#4B4A69;
+}
+
+.fa-pen-to-square:hover {
+    color: #057ec9;
+    transition: 0.4s;
+}
+
+div.info > p {
+    font-size: 18px;
+}
+
+div.end > p {
+    margin-bottom: 23px;
+}
+
+div.info {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.end {
+    border-bottom: 1px solid #0a4569;
+}
+
+div.newsletter-button-container {
+    margin-top: 30px;
+}
+
+input#newsletter {
+    opacity: 0;
+    position: absolute;
+    width: fit-content;
+}
+
+input#newsletter + label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+input#newsletter:hover + label:before {
+    background-color: #AAA6A6;
+    transition: 0.3s;
+}
+
+input#newsletter:checked + label:before {
+    background-color: #3E6AA7;
+    border: 1px solid #4B4A69;
+    transition: 0.3s;
+}
+
+label[for="newsletter"] {
+    font-size: 16px;
+}
+
+div.button-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+button.finish {
+    height: 56px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 0;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    width: 188px;
+    color: #FAF6F6;
+    background: linear-gradient(120.74deg, #3D69A6 31.35%, #50A7DF 150.73%);
+}
+
+button.finish:hover {
+    background: linear-gradient(120.74deg, #7991CE 31.35%, #C5D8E3 150.73%);
+}

@@ -1,0 +1,36 @@
+
+#board {
+    width: 360px;
+    height: 360px;
+    background-color: lightblue;
+    border: 2px solid black;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 118px;
+    height: 118px;
+    border: 1px solid black;
+}
+
+
+#captcha_dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F3F4FF;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    box-sizing: border-box;
+    border: none;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+#captcha_dialog > p {
+    margin-bottom: 10px;
+}

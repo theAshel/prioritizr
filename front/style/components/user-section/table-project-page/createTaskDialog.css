@@ -1,0 +1,219 @@
+#create-task-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F3F4FF;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.36);
+    border-radius: 18px;
+    box-sizing: border-box;
+    border: none;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+p.invalid-input{
+    color: red;
+    font-size: 12px;
+    font-family: "Lexend-Light", sans-serif;
+    text-align: justify;
+}
+
+/* ------ Header section ------ */
+
+.create-task-dialog-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-task-dialog-header h3 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.create-task-dialog-header div {
+    margin-left: auto;
+}
+
+.fa-xmark {
+    font-size: 20px;
+    color: #4B4A69;
+    transition: 0.2s;
+}
+
+.fa-xmark:hover {
+    color: #057ec9;
+}
+/* ------ End header section ------ */
+
+
+/* ------ Name input section ------ */
+
+.dialog-input {
+    border-bottom: 1px solid #AAA6A6;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.dialog-input label {
+    font-size: 20px;
+}
+
+.dialog-input input {
+    font-size: 18px;
+    color: #4B4A69;
+    margin-top: 20px;
+}
+
+/* ------ End title input section ------ */
+
+
+
+/* ------ Difficulty and priority section ------ */
+
+.second-input-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-input-field .dialog-input {
+    width: 250px;
+}
+
+.second-input-field > div {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+select {
+    margin-top: 20px;
+    width: 100%;
+    background: none;
+    border: none;
+    height: 33px;
+    font-size: 18px;
+}
+
+select:focus {
+    outline: none;
+}
+/* ------ End difficulty and priority section ------ */
+
+
+
+/* ------ Search user section ------ */
+
+.dialog-search-bar-input {
+    margin-top: 40px;
+    position: relative;
+}
+
+.dialog-search-bar-input label {
+    font-size: 20px;
+}
+
+.dialog-search-bar-input input {
+    margin-top: 0;
+    font-size: 18px;
+    color: #4B4A69;
+}
+.dialog-search-bar-input i {
+    font-size: 20px;
+}
+
+#search-attribute-task-user-results-container {
+    background-color: #FAF6F6;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: fit-content;
+    max-height: 200px;
+    overflow: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+}
+
+.attribute-task-user-search-result {
+    margin-top: 7px;
+}
+
+.attribute-task-user-search-result:hover {
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+
+#task-user-to-attribute-container {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+
+#task-user-to-attribute-container > p {
+    color: #2541bd;
+    font-size: 19px;
+    margin-right: 20px;
+}
+
+/* ------ End search user section ------ */
+
+
+/* ------- Description section ------ */
+
+#new-description-input {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+#new-description-input label {
+    font-size: 20px;
+}
+
+#new-description-input textarea {
+    font-size: 18px;
+    border: 1px solid #AAA6A6;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    background: #f9faff;
+    padding: 10px;
+    resize: none;
+}
+
+#new-description-input textarea:focus {
+    outline: none;
+}
+
+/* ------- Description section ------ */
+
+
+/* ------ Button ------ */
+
+#valid-task-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button#valid-task-creation {
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    color: #FAF6F6;
+    background: linear-gradient(120.74deg, #3D69A6 31.35%, #50A7DF 150.73%);
+}
+
+button#valid-task-creation:hover {
+    background: linear-gradient(120.74deg, #7991CE 31.35%, #C5D8E3 150.73%);
+}
+
+/* ------ End Button ------ */

@@ -1,0 +1,250 @@
+.container {
+    display: flex;
+    margin-top: 87px;
+    min-height: calc(100vh - 87px);
+    flex-direction: column;
+    padding: 21px 50px 60px 30px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+/*------ "Retourner à la page de projets" ------ */
+.container > p > a {
+    text-decoration: none;
+    color: #3D69A6;
+    font-size: 19px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.container > p > a:hover {
+    color: #6d91c7;
+}
+
+.container > p > a > span{
+    margin-left: 5px;
+}
+/*------ Fin "Retourner à la page de projets" ------ */
+
+
+/* ------- Main section ------- */
+main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+
+    /* || Menu au-dessus du tableau || */
+
+    #project-actions-menu {
+        display: flex;
+        align-items: baseline;
+        width: fit-content;
+        margin-top: 12px;
+        margin-bottom: 34px;
+        font-size: 20px;
+    }
+
+        /* ======= Titre du projet ======= */
+        #project-title {
+            display: flex;
+            align-items: baseline;
+            color: #4B4A69;
+            margin-right: 14px;
+        }
+
+        .dot {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+            flex-shrink: 0;
+            background-color: #3d6bce;
+        }
+
+        .red.dot {
+            background-color: #DB0000;
+        }
+        
+        .blue.dot {
+            background-color: #3d6bce;
+        }
+        
+        .green.dot {
+            background-color: #41E508;
+        }
+        
+        #project-title h3 {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        #project-title .fa-pen-to-square {
+            font-size: 20px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        #project-title .fa-pen-to-square:hover {
+            color: #7d7c92;
+        }
+
+        /* ======= Fin Titre du projet ======= */
+    
+
+    #show-project-users-modal {
+        color: #6E6D8C;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    #show-project-users-modal:hover {
+        color: #aaa9b9;
+    }
+    
+    #create-task-popup-button {
+        color: #3B7BDA;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    #create-task-popup-button:hover {
+        color: #164a99;
+    }
+
+    .delete-project-popup {
+        color: #DB0000;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .delete-project-popup:hover {
+        color: #e66d6d;
+    }
+
+    #project-actions-menu p:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    /* || Fin menu au-dessus du tableau || */
+
+
+    /* || Table section || */
+
+    #table {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+        /* ======= colonne de tableau ======= */
+
+        #table .column {
+            min-height: 100%;
+            width: 24.5%;
+            background: #ECEDFF;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 12px;
+        }
+
+        .column .task:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        .task-status {
+            font-size: 23px;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+
+        .task {
+            background: #F3F7FF;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            box-sizing: border-box;
+            padding: 5px 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            cursor: pointer;
+        }
+
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fa-trash-can:hover {
+            color: red;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .task-number {
+            color: #817474;
+            font-family: "Lexend-Light", sans-serif;
+            font-size: 16px;
+        }
+
+        .task p:nth-child(2) {
+            color: #4B4A69;
+            font-size: 20px;
+        }
+
+        .subtask-container-button {
+            display: flex;
+            width: fit-content;
+            align-items: center;
+            color: #615DD6;
+        }
+
+        .subtask-container-button-text {
+            color: #615DD6;
+            font-size: 16px;
+            width: fit-content;
+            margin-right: 7px;
+            transition: 0.2s;
+        }
+
+        .subtask-container-button-text:hover {
+            color: #26228b;
+        }
+
+        .subtask-container-button:hover {
+            color: #26228b;
+        }
+
+
+            /* ~~~~~~~~ Sous tâche ~~~~~~~~ */
+
+            .subtasks-container {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .subtask-container {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                width: fit-content;
+                margin-left: 5px;
+            }
+
+            .subtask-container > label{
+                margin-right: 10px;
+            }
+
+            .subtask-checkbox {
+                width: min-content;
+            }
+
+            /* ~~~~~~~~ fin sous tâche ~~~~~~~~ */
+        /* ======= fin colonne de tableau ======= */
+
+    /* || End table section || */
+/* ------- end main section ------- */

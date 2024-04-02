@@ -1,0 +1,32 @@
+.fa-arrow-left {
+    position: absolute;
+    color:#4B4A69;
+}
+
+.fa-arrow-left:hover {
+    color: #057ec9;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+div.title {
+    position: relative;
+}
+
+div.eye-icon {
+    display: flex;
+    align-items: center;
+}
+
+.fa-eye {
+    color: #bfbfbf;
+    font-size: 15px;
+}
+
+div.container-password {
+    display: flex;
+}
+
+input[type="password"] {
+    font-size: 20px;
+}

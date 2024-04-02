@@ -1,0 +1,119 @@
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    min-height: 100vh; 
+    background-color: #645c5c;
+}
+body {
+    margin-left: 20%;
+}
+
+.headerlink {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.headerlink:hover {
+    background-color: #322c2c;
+}
+
+#headerlogo {
+    width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  
+th {
+    top: 0;
+    position: sticky;
+    background-color: #3498db;
+    color: white;
+}
+.table_row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+.table_row:hover {
+    background-color: #eaf5fd;
+}
+h1 {
+    text-align: center;
+    color: #05151f;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-label {
+    color: blue;
+    font-size: 0.7em;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.newsletter_form,#imageContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.newsletter_input,.newsletter_textarea {
+    border-radius: 5px;
+    border-color: rgb(168, 168, 179);
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+.newsletter_input {
+   height: 2em;
+   width: 50em;
+}
+
+.newsletter_textarea {
+    resize : none;
+}
+
+.newsletter_input:focus,.newsletter_textarea:focus{
+    border-width: 3px;
+    border-color: rgb(148, 148, 240);
+    outline: none;
+}
+
+.newsletter_submit {
+    align-self: center;
+    font-size:1em;
+    padding:8px;
+    border-radius:5px;
+    background-color:#6666e5;
+    color:white;
+    text-decoration:none;
+    transition: transform 0.3s ease;
+    border-style: solid;
+}
+
+#newsletter_submit {
+    display: flex;
+    justify-content: center; 
+}
+
+.newsletter_submit:hover {
+    background-color:#060651;
+    color:white;
+    text-decoration:none;
+    transform: scale(1.1);
+}
